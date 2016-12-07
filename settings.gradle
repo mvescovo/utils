@@ -1,1 +1,1 @@
-include ':app', ':utils-network'
+include ':app', ':network'
