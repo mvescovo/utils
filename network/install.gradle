@@ -1,0 +1,39 @@
+apply plugin: 'com.github.dcendents.android-maven'
+
+group = 'com.michaelvescovo.android.utils' // CREATE A GROUP ID FOR YOUR LIBRARY
+
+install {
+    repositories.mavenInstaller {
+        pom {
+            project {
+                packaging 'aar'
+                groupId 'com.michaelvescovo.android.utils' // CREATE A GROUP ID FOR YOUR LIBRARY
+                artifactId 'network' // THE NAME OF YOUR MODULE
+
+                name 'Network' // YOUR LIBRARY NAME
+                description 'Receiver that writes network connection status to shared preferences.' // YOUR LIBRARY DESCRIPTION
+                url 'https://github.com/mvescovo/utils' // YOUR SITE
+
+                licenses {
+                    license {
+                        name 'GNU General Public License v3.0'
+                        url 'http://choosealicense.com/licenses/gpl-3.0'
+                    }
+                }
+                developers {
+                    developer {
+                        id 'mvescovo' //YOUR ID
+                        name 'Michael Vescovo' //YOUR NAME
+                        email 'm.vescovo@gmail.com' //YOUR EMAIL
+                    }
+                }
+                scm {
+                    connection 'https://github.com/mvescovo/utils' // YOUR GIT REPO
+                    developerConnection 'https://github.com/mvescovo/utils' // YOUR GIT REPO
+                    url 'https://github.com/mvescovo/utils' // YOUR SITE
+
+                }
+            }
+        }
+    }
+}
