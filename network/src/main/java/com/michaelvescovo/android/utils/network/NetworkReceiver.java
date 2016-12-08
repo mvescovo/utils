@@ -5,12 +5,9 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
-import android.content.SharedPreferences;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
-import android.preference.PreferenceManager;
 import android.support.design.widget.Snackbar;
-import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
@@ -24,7 +21,7 @@ public class NetworkReceiver extends BroadcastReceiver {
     private String mSnackbarMessage;
     private int mSnackbarBgColour;
     private int mSnackbarTextColour;
-    public boolean isConnected;
+    public boolean networkConnected;
     private Snackbar mSnackbar;
 
     public NetworkReceiver(Activity activity, String snackbarMessage, int snackbarBgColour,
@@ -44,10 +41,10 @@ public class NetworkReceiver extends BroadcastReceiver {
         ConnectivityManager cm =
                 (ConnectivityManager) mActivity.getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo activeNetwork = cm.getActiveNetworkInfo();
-        isConnected = activeNetwork != null &&
+        networkConnected = activeNetwork != null &&
                 activeNetwork.isConnectedOrConnecting();
 
-        mSnackbar = networkSnackbar(isConnected, mSnackbar,
+        mSnackbar = networkSnackbar(networkConnected, mSnackbar,
                 mActivity.findViewById(android.R.id.content));
     }
 
