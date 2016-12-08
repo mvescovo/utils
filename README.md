@@ -6,6 +6,8 @@ Android utilities library for sharing code between projects.
 
 - Monitors network connection status and shows a snackbar when disconnected.
 
+[Network module guide](https://github.com/mvescovo/utils/tree/master/network)
+
 # Install
 Add the appropriate dependency to your app level build.gradle file:
 ~~~
