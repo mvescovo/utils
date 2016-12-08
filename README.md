@@ -4,7 +4,7 @@ Android utilities library for sharing code between projects.
 # Features
 ###### Network module
 
-- Saves network connection status to shared preferences.
+- Monitors network connection status and shows a snackbar when disconnected.
 
 # Install
 Add the appropriate dependency to your app level build.gradle file:
