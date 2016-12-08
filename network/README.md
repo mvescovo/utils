@@ -47,12 +47,20 @@ public class MainActivity extends AppCompatActivity {
 }
 ~~~
 
+You can also check network status from the Activity as necessary:
+
+~~~
+if (mNetworkReceiver.networkConnected) {
+    // Do something...
+}
+~~~
+
 # Screenshots
 
 Network disconnected:
 
 <!--![network-disconnected](https://cloud.githubusercontent.com/assets/15829736/20997335/9de752ac-bd58-11e6-88ff-e7bda1cf057b.png)-->
-<img src="https://cloud.githubusercontent.com/assets/15829736/20997335/9de752ac-bd58-11e6-88ff-e7bda1cf057b.png" height="400" width="225">
+<img src="https://cloud.githubusercontent.com/assets/15829736/20997335/9de752ac-bd58-11e6-88ff-e7bda1cf057b.png" height="500" width="281">
 
 # Licence
 
