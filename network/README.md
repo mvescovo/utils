@@ -8,7 +8,7 @@ Android network utility library for sharing network utility code between project
 # Install
 Add the dependency to your app level build.gradle file:
 ~~~
-compile 'com.michaelvescovo.android.utils:network:0.0.1'
+compile 'com.michaelvescovo.android.utils:network:0.1.1'
 ~~~
 
 # Usage
