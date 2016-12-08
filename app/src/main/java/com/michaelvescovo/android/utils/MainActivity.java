@@ -16,9 +16,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mNetworkReceiver = new NetworkReceiver(this, getString(R.string.network_disconnected),
+        mNetworkReceiver = new NetworkReceiver(
+                this,
+                getString(R.string.network_disconnected),
                 ContextCompat.getColor(this, R.color.colorAccent),
-                ContextCompat.getColor(this, R.color.white));
+                ContextCompat.getColor(this, R.color.white)
+        );
     }
 
     @Override
