@@ -11,7 +11,7 @@ install {
                 artifactId 'network' // THE NAME OF YOUR MODULE
 
                 name 'Network' // YOUR LIBRARY NAME
-                description 'Receiver that writes network connection status to shared preferences.' // YOUR LIBRARY DESCRIPTION
+                description 'Receiver that monitors network connection status and shows a snackbar when disconnected.' // YOUR LIBRARY DESCRIPTION
                 url 'https://github.com/mvescovo/utils' // YOUR SITE
 
                 licenses {

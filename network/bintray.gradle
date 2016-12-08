@@ -33,7 +33,7 @@ bintray {
     pkg {
         repo = 'utils' // REPO NAME
         name = 'network' //MODULE NAME
-        desc = 'Receiver that writes network connection status to shared preferences.' // YOUR LIBRARY DESCRIPTION
+        desc = 'Receiver that monitors network connection status and shows a snackbar when disconnected.' // YOUR LIBRARY DESCRIPTION
         websiteUrl = 'https://github.com/mvescovo/utils' // YOUR SITE
         vcsUrl = 'https://github.com/mvescovo/utils' // YOUR GIT REPO
         licenses = ["GNU General Public License v3.0"] // A LIST OF YOUR LICENCES
