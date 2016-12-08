@@ -2,7 +2,7 @@
 Android utilities library for sharing code between projects.
 
 # Features
-##### [Network module guide](https://github.com/mvescovo/utils/tree/master/network)
+### [Network module](https://github.com/mvescovo/utils/tree/master/network)
 
 - Monitors network connection status and shows a snackbar when disconnected.
 
