@@ -5,6 +5,13 @@ Android network utility library for sharing network utility code between project
 
 - Monitors network connection status and shows a snackbar when disconnected.
 
+# Screenshots
+
+Network disconnected:
+
+<!--![network-disconnected](https://cloud.githubusercontent.com/assets/15829736/20997335/9de752ac-bd58-11e6-88ff-e7bda1cf057b.png)-->
+<img src="https://cloud.githubusercontent.com/assets/15829736/20997335/9de752ac-bd58-11e6-88ff-e7bda1cf057b.png" height="500" width="281">
+
 # Install
 Add the dependency to your app level build.gradle file:
 ~~~
@@ -54,13 +61,6 @@ if (mNetworkReceiver.networkConnected) {
     // Do something...
 }
 ~~~
-
-# Screenshots
-
-Network disconnected:
-
-<!--![network-disconnected](https://cloud.githubusercontent.com/assets/15829736/20997335/9de752ac-bd58-11e6-88ff-e7bda1cf057b.png)-->
-<img src="https://cloud.githubusercontent.com/assets/15829736/20997335/9de752ac-bd58-11e6-88ff-e7bda1cf057b.png" height="500" width="281">
 
 # Licence
 
